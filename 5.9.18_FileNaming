@@ -1,0 +1,2 @@
+No extension means Ruby manifest file, named with capital letter at the start
+Ruby files are all snake_case, with .rb at the end

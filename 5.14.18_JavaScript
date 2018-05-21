@@ -1,0 +1,85 @@
+JavaScript is actually a TM owned by Oracle.
+Brenden Eich created 'Mocha' in 1995, then LiveScript, and then JavaScript, in a single week.
+JavaScript has nothing to do with Java, it was just named that as a marketing gimmick.
+
+JavaScript is now actually called EcmaScript
+  ES1,2,3, and 5 are EcmaScript (there is no 4)
+  ES6 was so big, it just changed to yearly updates. ES2015, ES2016... so on.
+  In 1997 it began to be managed by ECMA.
+
+  Need to be careful with how 'heavy' our JavaScript code gets. It can slow down computers/speeds
+  in other countries where fast internet isn't as readily available.
+
+//this is a comment
+
+/* this is
+a
+multi
+line
+comment */
+
+Data Types:
+
+  boolean: true / false
+
+  Number:
+    integer: -56, 56 (any positive or negative number)
+    float: 4.2222
+    NaN: Not a number
+
+  string: 'This is a string' (single or double quotes make absolutely no difference)
+    var planet = 'earth'
+    var greeting = 'hello'
+    var str = greeting + ' ' + planet (this will concatenate)
+    console.log( str ) ... this will print out "hello earth"
+
+  null: null
+
+  undefined: undefined (reserved for variables that aren't defined yet)
+
+  Object: -
+    { name: 'Andrew', sayHi: function () {} } - object
+    { "name": 'Andrew' } - JSON, JavaScript Object Notation
+    Array: [1,2,3]
+    Date: (this will take the timezone of the client, service side are in UTC)
+
+  Math:
+    Operators are all primarily the same
+
+    3 == '3' (true)
+
+    3 === 3 (true), three === is actually checking value and type.
+
+    3 === '3' (false)
+
+    Logical operators
+      x > 5 && x < 10
+
+      x < 5 || x > 10
+
+      Short circuiting = Use the side that is more likely to fail on the first side
+
+    Variables
+      var firstName = 'Andrew'
+      var myVar4$_ = 'valid variable'
+      var foo = 1 (these are case sensitive)
+      var Foo = 2 (these are case sensitive)
+      JS reserved words are not available to set as variables
+
+      var longString = "This is a long string"
+      var shortString = "Shorter"
+
+      longString.length   (.length is a property)
+      longString.charAt() (this is a function, () calls the function)
+
+    Loops
+
+      for
+      forEach
+      do..while
+      for..in
+      map
+      reduce
+      filter
+
+      for ( var i = 0; i < 10;; i++ ) { conosole.log ( i ) }

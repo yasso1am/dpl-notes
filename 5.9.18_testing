@@ -1,0 +1,9 @@
+Testing, 3 main things to cover:
+
+Manual: break software by using it (not covered)
+Integration testing: writing an automated test, that will go through the app in different paths to see
+            if things are working correctly. QA Automation would write this.
+Unit testing: Tests that run around units inside of our application (around a method, etc.)
+
+gem 'rspec' - is one of the most popular testing gems ('rspe/core/rake_task'
+gem 'rake' - allows us to run tasks around our application

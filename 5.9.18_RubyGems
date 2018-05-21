@@ -1,0 +1,44 @@
+Gems allow us to prevent reinventing the wheel!
+
+gem install...
+
+eg.
+gem install pry
+
+It goes to rubygems.org and find the program and installs it in the terminal
+
+to use it in your .rb file, at the top all you have to write is:
+
+require 'colorize'
+
+puts "This is a string".colorize(:blue)
+
+This will work on your computer, however if you share the file, it won't actually colorize.
+
+
+Create a Gemfile (with no .rb)
+
+source 'https://rubygems.org'
+
+ruby '2.5.0'
+
+gem 'colorize'
+gem 'pry'
+gem 'rack', '>=1.0'
+gem 'thin', '~>1.1.0'
+gem 'rails', '5.1.2'
+
+To get people to install the file:
+
+in terminal, under the file folder that contains "Gemfile", type
+
+bundle install
+or
+bundle update
+
+Pinning Gems = Putting the version acceptable for install, you are keeping bugs to a minimum,
+asking for specific versions or "up to" or "no more than".
+
+
+*** SEMANTIC VERSIONING **** major / minor / patch
+2.4.3, 2 is major, 4 is minor, 3 is patch

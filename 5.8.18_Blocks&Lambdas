@@ -1,0 +1,7 @@
+arr.each do |num|
+puts num **2
+end
+
+This is a block, between the Do/end
+
+arr.ech { |num| puts num ** 2 }  This is also a block

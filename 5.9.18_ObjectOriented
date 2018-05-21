@@ -1,0 +1,39 @@
+Typically server side code: is OOP
+Typically client side code: is functional
+
+Classes are uniqe to OOP
+
+3 Principles to OOP
+
+*Polymorphism*
+
+- Each object can have varying characteristic, and still count as the same object
+Car is the object, it's characteristic is Honda, or Toyota
+Both are the same object, but also different.
+
+
+*Encapsulation*
+
+- Restricting access to an object's operations and values (only the object can do the thing)
+    Basically scoping the object's characteristics
+
+- Hiding implementation details from things outside of the object
+  The idea of encapsulation is to bundle data with the methods that operate on that data
+
+*Inheritance
+
+- An object or class is based on another object
+  Parent Class = Animal (some are cats, some are dogs, some are monkeys) - this is the Parent class
+    Child Class = Dog (dog will inherit all of the characteristics of Animal as it's Child)
+
+- You can only inherit from one class
+
+- The child can override the parent function if named exactly the same
+
+- The child can alter the parent function via 'super'
+
+
+    What's the different between a class and a module:
+      It's simple, a Class gets instantiated, a module doesn't.
+      A class is a blueprint, and the object is the thing designed by the blueprint
+      Module is more parallel to a class

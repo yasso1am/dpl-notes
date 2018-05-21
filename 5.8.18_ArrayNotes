@@ -1,0 +1,106 @@
+#Ways to create new arrays
+
+arr = Array.new * capital A on purpose for Array
+arr2 = Array.new(5) #  this will fill 5 slots with 'nil'
+arr3 = []
+arr4 = ['pear', 'grape', 'apple']
+arr5 = [1, 'a', array.new, {}, (1 + 2), true]
+## ask about this one - arr6 = Array.new (6, 'YOLO') # - This will make a new aray with 6 positions, and 'YOLO' will fill each position
+
+arr.each do { |letter| puts letter } # this is semantically preferred for single lines of output
+
+arr.each do |letter| # this is preferred for multiple things being done called block
+  #do something with the letter
+    #do something else
+      #do this too
+  puts letter
+end
+
+arr.each_with_index { |letter, i| puts "#{i + 1}) #{letter}" }
+
+Ways to Modify an array
+
+To add something to the end of the array
+arr.push('d')
+arr << 'e'
+
+To add something to the beginning of the array
+arr.unshift '1'
+or
+arr.unshift ('2')
+
+To pop things off the end
+arr.pop
+# will give back the final thing in the array ('e')
+
+To shift things off the beginning
+arr.shift
+# will give back the beginning of the array, ('2')
+
+To insert things at a specific index
+arr.insert(1, 'Z')
+# will add Z at position 1, which is the 2nd element in the list
+
+To slide everything to the left
+arr.rotate
+arr.rotate.rotate.rotate
+
+To delete at index
+arr.delete_at 1
+
+To reset an index
+arr.clear
+or
+arr = []
+
+To find a random element from an index
+arr.sample
+To find two random elemenets from an index
+arr.sample(2)
+# rand = a random number between 0 and 1
+To find a random element that is unique in the index
+arr.uniq.sample
+To shuffle an array
+arr.shuffle
+To find the largest or smallest value in the string
+arr.max
+arr.min
+
+To turn an array into a string
+arr.join() # whatever you pass into the () will go in between the string
+arr.join(', ') # this would pass a comma between each element
+
+To print every element in an array
+arr.each { |l| puts l }
+
+or
+
+arr.flatten.each { |l| puts l } # this will print everything in the array, including any arrays inside of the array
+
+If you want to mutuate the original array # use the ! at the end of the method
+
+arr.flatten!.each {}
+
+If you want to print the options in reverse
+
+puts arr.reverse #does not mutate
+
+If you want to create a new array based off an old array, but changes to the new array doesn't' CHANGE the old array:
+a = [1,2,3]
+b = a.clone # .clone creates another array but serparate from a
+
+If you want to remove Nils from an ARRAY
+arr.compact
+
+TO RESET IRB
+COMMAND+K
+
+If a method ends with a ?, it returns a boolean
+a = nil
+a.nil? # because this is true, it will return 'true'
+
+"This is a Truth Table for asking questions"
+.nil?
+.empty?
+.any?
+.none?

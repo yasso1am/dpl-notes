@@ -1,0 +1,39 @@
+snake_case - underscore between each word
+camelCase - every word is capitalized except the first
+PascalCase - every word is capitalized
+
+Classes = PascalCase
+
+attr = short for attribute
+
+
+class Person
+  attr_reader :name (read only)
+  attr_accessor :age (read/write access)
+  attr_writer: (write only)
+
+  def initialize(name, age)
+    @name = name
+    @age = age
+  end
+
+  def increase_age(number)
+    @age += number
+  end
+end
+
+Person.new (will instatiate the class)
+
+.new = will call the intiialize function implicitly if there is one in the Person class
+.new is paired with def initialize
+
+person1 = Person.new('Dave', 37)
+person2 = Person.new('Jake', 28)
+
+puts person1.name
+puts 'Before last Cohort'
+puts person1.age
+puts "After Last Cohort"
+puts person1.increase_age(5)
+
+puts person2.name

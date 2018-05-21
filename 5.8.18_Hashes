@@ -1,0 +1,29 @@
+Hashes
+
+people = [] *array
+person = {} *hash
+
+person = { first_name: 'Bob', last_name: 'Bobson', age: 25 } *key:value
+
+If your key is a 'string'
+person = { 'first_name' => 'Bob'}
+person[:first_name] * finds Bob
+person['first_name'] * finds Bob by string
+person[:first_name] = Dave * this will change first name
+
+**preferred format**
+
+person = {
+  first_name: 'Abe',
+  last_name: 'Lincoln'
+  }
+
+person[:awesome_beard} = 'Yes sir!'
+
+delete_if will delete the entire element from the array
+array.delete will delete just the key: 'value' pair as appropriate
+
+h = {} *creates a new array and is preferred
+h = hash.new *does the same thing
+h = hash.new(0) * for any key that's not in your hash, (0) will be returned
+h1.merge(h2) * this will merge h2 into h1.
